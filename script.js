@@ -57,8 +57,8 @@ function editDelete(e) {
   //Edit ToDo
   if (item.classList[0] === "edit-btn") {
     const todo = item.parentElement;
-    const first = todo.firstChild.innerText;
-    const edit = prompt("Edit", first);
-
+    const getElement = todo.firstChild;
+    const editBox = prompt('Edit')
+    const edit = getElement.innerText = editBox
   }
 }
